@@ -1,0 +1,5 @@
+headers = c_api.h
+
+compilerOpts = -D_POSIX_SOURCE
+compilerOpts.osx = -I/usr/local/include/tensorflow/c -ltensorflow
+compilerOpts.linux = -I/usr/local/include/tensorflow/c -ltensorflow -D_REENTRANT
